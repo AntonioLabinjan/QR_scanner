@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <h1>Skener</h1>
-    <div class="container" v-if="!cameraAvailable">
+    <div v-if="!cameraAvailable">
       <p>Kamera nije dostupna na ovom uređaju.</p>
     </div>
-    <div class="container" v-else>
+    <div v-else>
       <video ref="video" width="300" height="200" autoplay></video>
       <canvas ref="canvas" width="300" height="200" style="display: none;"></canvas>
       <div v-if="scannedData" class="result">
@@ -29,7 +29,9 @@ export default {
 
     const startCamera = async () => {
       try {
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: 'environment' } // Postavljanje facingMode na 'environment' za zadnju kameru
+        });
         video.value.srcObject = stream;
       } catch (err) {
         console.error('Nije moguće pristupiti kameri:', err);
