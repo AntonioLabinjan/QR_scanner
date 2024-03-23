@@ -1,13 +1,17 @@
 <template>
   <div id="app">
     <h1>Skener</h1>
-    <div v-if="!cameraAvailable">
+    <div class="container" v-if="!cameraAvailable">
       <p>Kamera nije dostupna na ovom uređaju.</p>
     </div>
-    <div v-else>
+    <div class="container" v-else>
       <video ref="video" width="300" height="200" autoplay></video>
       <canvas ref="canvas" width="300" height="200" style="display: none;"></canvas>
-      <div v-if="scannedData">Skenirani sadržaj: {{ scannedData }}</div>
+      <div v-if="scannedData" class="result">
+        <p>Skenirani sadržaj:</p>
+        <p>{{ scannedData }}</p>
+        <button @click="openScannedLink">Otvori link</button>
+      </div>
     </div>
   </div>
 </template>
@@ -45,6 +49,14 @@ export default {
       }
     };
 
+    const openScannedLink = () => {
+      if (scannedData.value.startsWith('http')) {
+        window.open(scannedData.value, '_blank');
+      } else {
+        alert('Skenirani sadržaj nije valjan URL.');
+      }
+    };
+
     onMounted(() => {
       startCamera();
       if (video.value) {
@@ -56,12 +68,41 @@ export default {
       }
     });
 
-    return { video, canvas, scannedData, cameraAvailable };
+    return { video, canvas, scannedData, cameraAvailable, openScannedLink };
   },
 };
 </script>
 
-
 <style>
-/* Dodajte CSS stilove ovdje ako je potrebno */
+#app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin: 20px auto;
+}
+
+video {
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
 </style>
