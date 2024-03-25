@@ -276,7 +276,7 @@ Napomena: ne dirati datoteke izvan src foldera!!
 
 #### Screenshotovi: 
 
-![Opis slike](QR_scanner/Screen1.png)
+![Opis slike](images/Screen1.png)
 ![Opis slike](slike/slika.png)
 ![Opis slike](slike/slika.png)
 ![Opis slike](slike/slika.png)
