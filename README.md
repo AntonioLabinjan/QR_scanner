@@ -1,6 +1,36 @@
 Za potrebe projekta iz kolegija "Šifre i kodovi" vezanog uz temu "Barkodovi u modernoj komunikaciji s fokusom na QR kodove", kreirane su 2 mini-aplikacije. Jedna za kreiranje QR kodova i barkodova te druga za skeniranje i očitavanje barkodova.
 Korišteni programski jezici za njihovu izradu su: Python sa uključenim bibliotekama tkinter, qrcode i barcode, te JavaScript sa Vue frameworkom. Ovdje će biti objašnjen princip rada obe aplikacije, sam programski kod te način njihovog pokretanja. Aplikacije su izrađene sa ciljem brzog i jednostavnog kreiranja i očitavanja kodova bilo kada i bilo gdje zato što su oni uvelike zastupljeni u našem svakodnevnom okruženju i često se koriste u svakodnevnim aktivnostima. Omogućuju nam da pretvorimo bilo kakve informacije u QR kod te isto tako očitamo bilo koji QR kod u bilo kojem trenutku. 
 
+Preduvjeti: ukoliko želite lokalno preuzeti kod i pokrenuti ga, potrebno je instalirati određene pakete kako bi aplikacije imale sve uvjete za uspješno pokretanje.
+Za generator kodova, potrebno je imati instaliran Python sa određenim bibliotekama.
+
+<ol>1. tkinter</ol>
+Iako bi tkinter trebao defaultno biti instaliran s Pythonom, najbolje je za svaki slučaj napisati naredbu:
+```
+pip install tkinter
+```
+Ta će naredba instalirati biblioteku tkinter ukoliko ona ne postoji na našem računalu. Ako već postoji, vratiti će nam obavijest o tome.
+Tkinter je Pythonova biblioteka za izradu grafičkog korisničkog sučelja (GUI) koja je jednostavna za korištenje i može raditi na više operativnih sustava. Omogućuje kreiranje raznovrsnih grafičkih elemenata poput gumba, polja za unos teksta i dijaloških okvira.
+
+<ol>2. qrcode[pil]</ol>
+Zatim je potrebno instalirati biblioteku za kreiranje qr-kodova (qrcode) te dodatno i [pil] koji omogućuje rad sa slikama.
+```
+pip install qrcode[pil]
+```
+Biblioteka qrcode omogućuje generiranje QR kodova u Pythonu. Ona podržava različite konfiguracije QR kodova, uključujući veličinu, razinu ispravka grešaka, boju i pozadinu, omogućujući prilagodbu izgleda generiranih kodova. Osim toga, omogućuje jednostavno integriranje generiranih QR kodova u Python aplikacije, web stranice ili druge sustave. Ova biblioteka također podržava mogućnost generiranja QR kodova iz različitih formata podataka poput teksta, URL-ova, vCard kontaktnih podataka i drugih. 
+
+Oznaka [pil] u naredbi za instalaciju biblioteke qrcode označava dodatnu neobaveznu komponentu "Python Imaging Library" (PIL), koja omogućuje generiranje slika QR kodova. Instalacija PIL-a uz qrcode omogućuje korisnicima da generiraju vizualne reprezentacije QR kodova. Bez PIL-a, qrcode bi generirao samo podatke QR koda, ali ne i sliku koja prikazuje QR kod.
+
+<ol>3. barcode</ol>
+Zadnja Python biblioteka koju moramo uključiti je barcode. To radimo sa sljedećom naredbom:
+```
+pip install barcode
+```
+Biblioteka python-barcode omogućuje generiranje različitih vrsta barkodova u programskom jeziku Python. Ova biblioteka pruža jednostavno sučelje za stvaranje linearnih i 2D barkodova, kao što su EAN-13, Code 39, Code 128 i QR kodovi. Korisnici mogu kontrolirati različite parametre generiranih barkodova, uključujući veličinu, boju i razinu ispravka grešaka. python-barcode podržava generiranje barkodova iz različitih formata podataka, što olakšava integraciju s različitim vrstama aplikacija. Ova biblioteka je korisna za razvoj aplikacija koje zahtijevaju generiranje barkodova, poput sustava za praćenje inventara ili trgovinskih aplikacija. Integracija python-barcode-a u Python aplikacije omogućuje brzo dodavanje funkcionalnosti generiranja barkodova.
+
+Što se tiče čitača kodova, postoji easy path i hard path. U hard pathu, bilo bi potrebno instalirati Node.js, Vue.js, kreirati novi Vue projekt, dodavati određene zavisnosti u projekt i sl. No, Vue aplikacije je prilično jednostavno hostati na razne poslužitelje. U našem slučaju to je Vercel, pa je moguće bez ikakvih problema pristupiti čitaču preko linka.
+qr-scanner-zeta.vercel.app
+Jedini je preduvjet da uređaj na kojem radimo ima internetsku vezu, kameru i neki od browsera u kojem može otvoriti aplikaciju.
 # Programski kod
 
 ```Python
