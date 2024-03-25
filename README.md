@@ -275,3 +275,17 @@ Za pokretanje generatora QR kodova, moguće je koristiti većinu Python editora,
 Napomena: ne dirati datoteke izvan src foldera!!
 
 #### Screenshotovi: 
+
+![Opis slike](QR_scanner/Screen1.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+![Opis slike](slike/slika.png)
+
