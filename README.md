@@ -6,9 +6,9 @@ Za generator kodova, potrebno je imati instaliran Python sa određenim bibliotek
 
 <ol>1. tkinter</ol>
 Iako bi tkinter trebao defaultno biti instaliran s Pythonom, najbolje je za svaki slučaj napisati naredbu:
-```Python
+```bash
 pip install tkinter
-```
+
 Ta će naredba instalirati biblioteku tkinter ukoliko ona ne postoji na našem računalu. Ako već postoji, vratiti će nam obavijest o tome.
 Tkinter je Pythonova biblioteka za izradu grafičkog korisničkog sučelja (GUI) koja je jednostavna za korištenje i može raditi na više operativnih sustava. Omogućuje kreiranje raznovrsnih grafičkih elemenata poput gumba, polja za unos teksta i dijaloških okvira.
 
