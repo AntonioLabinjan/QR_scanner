@@ -6,15 +6,15 @@ Za generator kodova, potrebno je imati instaliran Python sa određenim bibliotek
 
 <ol>1. tkinter</ol>
 Iako bi tkinter trebao defaultno biti instaliran s Pythonom, najbolje je za svaki slučaj napisati naredbu:
-```
+```Python
 pip install tkinter
-```
+´´´
 Ta će naredba instalirati biblioteku tkinter ukoliko ona ne postoji na našem računalu. Ako već postoji, vratiti će nam obavijest o tome.
 Tkinter je Pythonova biblioteka za izradu grafičkog korisničkog sučelja (GUI) koja je jednostavna za korištenje i može raditi na više operativnih sustava. Omogućuje kreiranje raznovrsnih grafičkih elemenata poput gumba, polja za unos teksta i dijaloških okvira.
 
 <ol>2. qrcode[pil]</ol>
 Zatim je potrebno instalirati biblioteku za kreiranje qr-kodova (qrcode) te dodatno i [pil] koji omogućuje rad sa slikama.
-```
+```Python
 pip install qrcode[pil]
 ```
 Biblioteka qrcode omogućuje generiranje QR kodova u Pythonu. Ona podržava različite konfiguracije QR kodova, uključujući veličinu, razinu ispravka grešaka, boju i pozadinu, omogućujući prilagodbu izgleda generiranih kodova. Osim toga, omogućuje jednostavno integriranje generiranih QR kodova u Python aplikacije, web stranice ili druge sustave. Ova biblioteka također podržava mogućnost generiranja QR kodova iz različitih formata podataka poput teksta, URL-ova, vCard kontaktnih podataka i drugih. 
