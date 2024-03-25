@@ -26,7 +26,7 @@ Oznaka [pil] u naredbi za instalaciju biblioteke qrcode označava dodatnu neobav
 <ol>3. barcode</ol>
 Zadnja Python biblioteka koju moramo uključiti je barcode. To radimo sa sljedećom naredbom:
 ```Python
-pip install barcode
+pip install python-barcode
 ```
 Biblioteka python-barcode omogućuje generiranje različitih vrsta barkodova u programskom jeziku Python. Ova biblioteka pruža jednostavno sučelje za stvaranje linearnih i 2D barkodova, kao što su EAN-13, Code 39, Code 128 i QR kodovi. Korisnici mogu kontrolirati različite parametre generiranih barkodova, uključujući veličinu, boju i razinu ispravka grešaka. python-barcode podržava generiranje barkodova iz različitih formata podataka, što olakšava integraciju s različitim vrstama aplikacija. Ova biblioteka je korisna za razvoj aplikacija koje zahtijevaju generiranje barkodova, poput sustava za praćenje inventara ili trgovinskih aplikacija. Integracija python-barcode-a u Python aplikacije omogućuje brzo dodavanje funkcionalnosti generiranja barkodova.
 
