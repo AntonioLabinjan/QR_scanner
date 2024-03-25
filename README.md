@@ -8,7 +8,7 @@ Za generator kodova, potrebno je imati instaliran Python sa određenim bibliotek
 Iako bi tkinter trebao defaultno biti instaliran s Pythonom, najbolje je za svaki slučaj napisati naredbu:
 ```Python
 pip install tkinter
-´´´
+```
 Ta će naredba instalirati biblioteku tkinter ukoliko ona ne postoji na našem računalu. Ako već postoji, vratiti će nam obavijest o tome.
 Tkinter je Pythonova biblioteka za izradu grafičkog korisničkog sučelja (GUI) koja je jednostavna za korištenje i može raditi na više operativnih sustava. Omogućuje kreiranje raznovrsnih grafičkih elemenata poput gumba, polja za unos teksta i dijaloških okvira.
 
@@ -23,7 +23,7 @@ Oznaka [pil] u naredbi za instalaciju biblioteke qrcode označava dodatnu neobav
 
 <ol>3. barcode</ol>
 Zadnja Python biblioteka koju moramo uključiti je barcode. To radimo sa sljedećom naredbom:
-```
+```Python
 pip install barcode
 ```
 Biblioteka python-barcode omogućuje generiranje različitih vrsta barkodova u programskom jeziku Python. Ova biblioteka pruža jednostavno sučelje za stvaranje linearnih i 2D barkodova, kao što su EAN-13, Code 39, Code 128 i QR kodovi. Korisnici mogu kontrolirati različite parametre generiranih barkodova, uključujući veličinu, boju i razinu ispravka grešaka. python-barcode podržava generiranje barkodova iz različitih formata podataka, što olakšava integraciju s različitim vrstama aplikacija. Ova biblioteka je korisna za razvoj aplikacija koje zahtijevaju generiranje barkodova, poput sustava za praćenje inventara ili trgovinskih aplikacija. Integracija python-barcode-a u Python aplikacije omogućuje brzo dodavanje funkcionalnosti generiranja barkodova.
