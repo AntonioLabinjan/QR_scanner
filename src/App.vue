@@ -79,6 +79,8 @@ export default {
 #app {
   font-family: Arial, sans-serif;
   text-align: center;
+  background-color: #f0f0f0; /* Dodana pozadinska boja */
+  padding: 20px; /* Dodan padding za razmak između ruba i sadržaja */
 }
 
 .container {
@@ -88,10 +90,15 @@ export default {
 video {
   border: 2px solid #333;
   border-radius: 5px;
+  background-color: #fff; /* Dodana pozadinska boja */
 }
 
 .result {
   margin-top: 20px;
+  background-color: #fff; /* Dodana pozadinska boja */
+  padding: 10px; /* Dodan padding za razmak unutar rezultata */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Dodan blagi sjaj */
 }
 
 button {
