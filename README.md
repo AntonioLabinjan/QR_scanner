@@ -1,3 +1,5 @@
+### Sustav za kreiranje i skeniranje QR kodova
+
 Za potrebe projekta iz kolegija "Šifre i kodovi" vezanog uz temu "Barkodovi u modernoj komunikaciji s fokusom na QR kodove", kreirane su 2 mini-aplikacije. Jedna za kreiranje QR kodova i barkodova te druga za skeniranje i očitavanje barkodova.
 Korišteni programski jezici za njihovu izradu su: Python sa uključenim bibliotekama tkinter, qrcode i barcode, te JavaScript sa Vue frameworkom. Ovdje će biti objašnjen princip rada obe aplikacije, sam programski kod te način njihovog pokretanja. Aplikacije su izrađene sa ciljem brzog i jednostavnog kreiranja i očitavanja kodova bilo kada i bilo gdje zato što su oni uvelike zastupljeni u našem svakodnevnom okruženju i često se koriste u svakodnevnim aktivnostima. Omogućuju nam da pretvorimo bilo kakve informacije u QR kod te isto tako očitamo bilo koji QR kod u bilo kojem trenutku. 
 
